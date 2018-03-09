@@ -1,14 +1,14 @@
-<div class="navbar">
-  <div>
-    <a href="index.html">Home</a>
-  </div>
-  <div>
-    <a href="gallery.html">Gallery</a>
-  </div>
-  <div>
-    <a href="gallery.html">Rent</a>
-  </div>
-  <div>
-    <a href="gallery.html">About</a>
-  </div>
-</div>
+<ul class="navbar">
+  <li>
+    <a <% if current_page.data.pagenum == "0" %> <%= 'class="active"' %> <% end %>href="index.html">Home</a>
+  </li>
+  <li>
+    <a <% if current_page.data.pagenum == "1" %> <%= 'class="active"' %> <% end %> href="gallery.html">Gallery</a>
+  </li>
+  <li>
+    <a <% if current_page.data.pagenum == "2" %> <%= 'class="active"' %> <% end %> href="gallery.html">Rent</a>
+  </li>
+  <li>
+    <a <% if current_page.data.pagenum == "3" %> <%= 'class="active"' %> <% end %>href="gallery.html">About</a>
+  </li>
+</ul>

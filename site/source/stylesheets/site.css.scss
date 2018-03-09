@@ -2,13 +2,15 @@
 $primary: #064273;
 $secondary: #76b6c4; 
 $body-bg: #BDD09F;
-$navbar-bg: rgba(#EEFFFF, 0.35);
+$navbar-bg: rgba(#EEFFFF, 0.65);
+$navbar-active: rgba(#1da2d8, 0.75);
+$navbar-hover: rgba(#EEFFFF, 0.90);
 $yield-bg: rgba(#FFFFFF, 0.85);
 $green-l: #BDD09F;
 $green-m: #668D3C;
 $green-d: #404F24;
 $blue-d: #064273;
-$blue-l: #76b6c4;
+$blue-l: #76B6C4;
 $blue-secondary: #1da2d8;
 $header-text: #EEFFFF;
 $shadow: rgba(#333333, 0.4);
@@ -28,24 +30,44 @@ body {
   text-align: left;
 }
 
+div#left-float {
+  float: left;
+  margin: 2px 25px 5px 10px;
+  padding: 10px;
+  width: 12%;
+}
+
 /*
  * Style for the nav bar.
  */
-div.navbar {
+.navbar {
+  list-style-type: none;
+  overflow: hidden; 
   font-family: 'Lobster', cursive;
   font-size: 20px;
-  float: left;
   background-color: $navbar-bg;
   padding: 0px;
   margin: 10px;
   border: 2px solid $primary;
   box-shadow: 3px 3px 3px $shadow;
-  
+  width: 100%;
   /* style for navbar buttons */
-  div {
-    text-align: center;
-    width: 100%;
+  a {
     padding: 10px 15px 10px 15px;
+    color: $primary;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-style: normal;
+    text-shadow: 2px 2px 1px $shadow;
+  }
+  
+  a.active {
+    background-color: $navbar-active;
+  }
+
+  a:hover:not(.active) {
+    background-color: $navbar-hover;
   }
   
 }
