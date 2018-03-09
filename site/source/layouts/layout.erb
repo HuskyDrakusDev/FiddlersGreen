@@ -7,12 +7,13 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Fiddler's Green" %></title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
     <link rel="stylesheet" href="stylesheets/site.css">
     <script src="javascripts/site.js"></script>
   </head>
   <body>
-    <% partial "header" %>
+    <%= partial "header" %>
     <%= yield %>
-    <% partial "footer" %>
+    <%= partial "footer" %>
   </body>
 </html>
