@@ -1,16 +1,40 @@
+/* Define Colors */
+$body-bg: #BDD09F;
+$yield-bg: rgba(#FFFFFF, 0.85);
+$primary: #404F24;
+$green-l: #BDD09F;
+$green-m: #668D3C;
+$green-d: #404F24;
+$header-text: #CCFFFF;
+$shadow: rgba(#333333, 0.4);
+
 body {
-  background-color: #fbc547;
-  color: #333;
+  background-color: $body-bg;
+  background: url(../images/boothbay2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #EEFFFF;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+  padding: 20px 8% 100px 8%;
+  text-align: left;
 }
 
 h1, h2, h3 {
   font-family: 'Lobster', cursive;
+  text-align: center;
+  text-shadow: 4px 4px 4px $shadow;
+}
+
+h1.header-title {
+  font-size: 60px;
+}
+
+hr {
+  color: #EEFFFF;
 }
 
 a {
